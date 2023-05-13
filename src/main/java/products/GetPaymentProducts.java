@@ -26,7 +26,6 @@ public class GetPaymentProducts {
 
         PaymentProducts response = client.merchant("10179").products().find(query);
 
-        URI.
         //Working on implement the response.
     }
 
