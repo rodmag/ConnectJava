@@ -1,9 +1,11 @@
 package products;
 
+import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.Factory;
 import com.ingenico.connect.gateway.sdk.java.domain.product.PaymentProducts;
 import com.ingenico.connect.gateway.sdk.java.merchant.products.FindProductsParams;
+import preparaConexao.PreparaConexao;
 
 import java.io.File;
 import java.net.URI;
@@ -11,10 +13,8 @@ import java.net.URI;
 public class GetPaymentProducts {
     public static void main(String[] args) {
 
-        String filePath = "C:\\Users\\w104860\\OneDrive - Worldline\\Documents\\Java\\ConnectJava\\src\\main\\resources\\Caminho";
-        File file = new File(filePath);
-        URI propertiesUrl= file.toURI();
-        Client client = Factory.createClient(propertiesUrl, "dfd1952dc924d813", "3It1Z8siQF+pxfa6TzSo64qMDq8uJ+iLS4TWnS1pCy0=");
+        //Utiliza API e Secret key configurada no arquivo PreparaConexao.
+        Client client = PreparaConexao.startConection();
 
         FindProductsParams query = new FindProductsParams();
         query.setCountryCode("BR");
@@ -26,7 +26,9 @@ public class GetPaymentProducts {
 
         PaymentProducts response = client.merchant("10179").products().find(query);
 
-        //Working on implement the response.
+        Gson gson = new Gson();
+
+        System.out.println("Resposta: " + gson.toJson(response));
     }
 
 }

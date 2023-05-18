@@ -1,21 +1,25 @@
 package payments;
 
+import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.Factory;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.PaymentResponse;
+import preparaConexao.PreparaConexao;
 
 import java.io.File;
 import java.net.URI;
 
 public class GetPayments {
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\w104860\\OneDrive - Worldline\\Documents\\Java\\ConnectJava\\src\\main\\resources\\Caminho";
-        File file = new File(filePath);
-        URI propertiesUrl= file.toURI();
-        Client client = Factory.createClient(propertiesUrl, "dfd1952dc924d813", "3It1Z8siQF+pxfa6TzSo64qMDq8uJ+iLS4TWnS1pCy0=");
+
+        //Utiliza API e Secret key configurada no arquivo PreparaConexao.
+        Client client = PreparaConexao.startConection();
 
         PaymentResponse response = client.merchant("10179").payments().get("paymentId");
 
+        Gson gson = new Gson();
+
+        System.out.println("Resposta: " + gson.toJson(response));
 
     }
 }

@@ -4,6 +4,7 @@ import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.Factory;
 import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsRequest;
 import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsResponse;
+import preparaConexao.PreparaConexao;
 
 import java.io.File;
 import java.net.URI;
@@ -13,10 +14,8 @@ import java.util.Properties;
 public class IINDetails {
     public static void main(String[] args) throws URISyntaxException {
 
-        String filePath = "C:\\Users\\w104860\\OneDrive - Worldline\\Documents\\Java\\ConnectJava\\src\\main\\resources\\Caminho";
-        File file = new File(filePath);
-        URI propertiesUrl= file.toURI();
-        Client client = Factory.createClient(propertiesUrl, "dfd1952dc924d813", "3It1Z8siQF+pxfa6TzSo64qMDq8uJ+iLS4TWnS1pCy0=");
+        //Utiliza API e Secret key configurada no arquivo PreparaConexao.
+        Client client = PreparaConexao.startConection();
 
         GetIINDetailsRequest body = new GetIINDetailsRequest();
         body.setBin("4485592758359790");

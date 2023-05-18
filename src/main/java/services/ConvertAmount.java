@@ -5,6 +5,7 @@ import com.ingenico.connect.gateway.sdk.java.Factory;
 import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsRequest;
 import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsResponse;
 import com.ingenico.connect.gateway.sdk.java.merchant.services.ConvertAmountParams;
+import preparaConexao.PreparaConexao;
 
 import java.io.File;
 import java.net.URI;
@@ -14,10 +15,8 @@ import java.util.Properties;
 public class ConvertAmount {
     public static void main(String[] args) throws URISyntaxException {
 
-        String filePath = "C:\\Users\\w104860\\OneDrive - Worldline\\Documents\\Java\\ConnectJava\\src\\main\\resources\\Caminho";
-        File file = new File(filePath);
-        URI propertiesUrl= file.toURI();
-        Client client = Factory.createClient(propertiesUrl, "dfd1952dc924d813", "3It1Z8siQF+pxfa6TzSo64qMDq8uJ+iLS4TWnS1pCy0=");
+        //Utiliza API e Secret key configurada no arquivo PreparaConexao.
+        Client client = PreparaConexao.startConection();
 
         ConvertAmountParams query = new ConvertAmountParams();
         query.setSource("USD");
