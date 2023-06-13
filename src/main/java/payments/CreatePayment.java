@@ -11,7 +11,7 @@ import com.ingenico.connect.gateway.sdk.java.domain.errors.definitions.APIError;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.CreatePaymentRequest;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.CreatePaymentResponse;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.definitions.*;
-import preparaConexao.PreparaConexao;
+import services.PreparaConexao;
 
 import java.util.List;
 

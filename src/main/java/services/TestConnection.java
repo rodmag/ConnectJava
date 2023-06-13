@@ -2,7 +2,6 @@ package services;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.Factory;
-import preparaConexao.PreparaConexao;
 
 import java.io.File;
 import java.net.URI;
@@ -15,7 +14,7 @@ public class TestConnection {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        com.ingenico.connect.gateway.sdk.java.domain.services.TestConnection response = client.merchant("10179").services().testconnection();
+        com.ingenico.connect.gateway.sdk.java.domain.services.TestConnection response = client.merchant("1908466593").services().testconnection();
 
         System.out.println(response.getResult());
 

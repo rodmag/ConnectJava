@@ -11,7 +11,7 @@ import com.ingenico.connect.gateway.sdk.java.domain.errors.definitions.APIError;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.CreatePaymentRequest;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.CreatePaymentResponse;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.definitions.*;
-import preparaConexao.PreparaConexao;
+import services.PreparaConexao;
 
 import java.util.List;
 
@@ -22,9 +22,9 @@ public class CreatePaymentWopa {
         Client client = PreparaConexao.startConection();
 
         Card card = new Card();
-        card.setCardNumber("4012000033330026");
+        card.setCardNumber("4507999999999991");
         card.setCvv("123");
-        card.setExpiryDate("1225");
+        card.setExpiryDate("1231");
 
         Merchant merchant = new Merchant();
         merchant.setConfigurationId("8002408");
@@ -70,9 +70,15 @@ public class CreatePaymentWopa {
         customer.setContactDetails(contactDetails);
         customer.setPersonalInformation(personalInformation);
 
+        OrderReferences references = new OrderReferences();
+        references.setDescriptor("Fast and Furry-ous");
+        references.setMerchantOrderId(123456L);
+        references.setMerchantReference("From_Java_0003");
+
         Order order = new Order();
         order.setAmountOfMoney(amountOfMoney);
         order.setCustomer(customer);
+        order.setReferences(references);
 
         CreatePaymentRequest body = new CreatePaymentRequest();
         body.setCardPaymentMethodSpecificInput(cardPaymentMethodSpecificInput);
