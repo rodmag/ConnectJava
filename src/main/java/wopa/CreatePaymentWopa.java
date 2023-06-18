@@ -39,6 +39,7 @@ public class CreatePaymentWopa {
         CardPaymentMethodSpecificInput cardPaymentMethodSpecificInput = new CardPaymentMethodSpecificInput();
         cardPaymentMethodSpecificInput.setCard(card);
         cardPaymentMethodSpecificInput.setPaymentProductId(1);
+        cardPaymentMethodSpecificInput.setAuthorizationMode("SALE");
         cardPaymentMethodSpecificInput.setThreeDSecure(threeDSecure);
 
         AmountOfMoney amountOfMoney = new AmountOfMoney();
@@ -73,7 +74,7 @@ public class CreatePaymentWopa {
         OrderReferences references = new OrderReferences();
         references.setDescriptor("Fast and Furry-ous");
         references.setMerchantOrderId(123456L);
-        references.setMerchantReference("From_Java_0003");
+        references.setMerchantReference("From_Java_0006");
 
         Order order = new Order();
         order.setAmountOfMoney(amountOfMoney);

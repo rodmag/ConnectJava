@@ -15,5 +15,4 @@ public class PreparaConexao {
         Client client = Factory.createClient(propertiesUrl, "dfd1952dc924d813", "3It1Z8siQF+pxfa6TzSo64qMDq8uJ+iLS4TWnS1pCy0=");
         return client;
     }
-
 }
