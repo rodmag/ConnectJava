@@ -1,4 +1,4 @@
-package wopa;
+package wopa.payments;
 
 import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;

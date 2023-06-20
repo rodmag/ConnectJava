@@ -1,4 +1,4 @@
-package wopa;
+package wopa.payments;
 
 import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.ApiException;
@@ -74,7 +74,7 @@ public class CreatePaymentWopa {
         OrderReferences references = new OrderReferences();
         references.setDescriptor("Fast and Furry-ous");
         references.setMerchantOrderId(123456L);
-        references.setMerchantReference("From_Java_0007");
+        references.setMerchantReference("From_Java_0008");
 
         Order order = new Order();
         order.setAmountOfMoney(amountOfMoney);
@@ -91,7 +91,7 @@ public class CreatePaymentWopa {
         try {
             CreatePaymentResponse response = client.merchant("1908466593").payments().create(body);
 
-            System.out.println("Resposta: " + gson.toJson(response));
+            System.out.println("Resposta do Create Payment: " + gson.toJson(response));
 
         } catch (DeclinedPaymentException e) {
             handleDeclinedPayment(e.getCreatePaymentResult());
