@@ -1,6 +1,5 @@
 package wopa.hostedCheckout;
 
-import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.domain.definitions.Address;
 import com.ingenico.connect.gateway.sdk.java.domain.definitions.AmountOfMoney;
@@ -9,7 +8,7 @@ import com.ingenico.connect.gateway.sdk.java.domain.hostedcheckout.CreateHostedC
 import com.ingenico.connect.gateway.sdk.java.domain.hostedcheckout.definitions.HostedCheckoutSpecificInput;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.definitions.Customer;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.definitions.Order;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 public class CreateHostedCheckout {
 

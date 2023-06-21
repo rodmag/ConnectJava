@@ -1,7 +1,6 @@
-package hostedCheckout;
+package GC.hostedCheckout;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
-import com.ingenico.connect.gateway.sdk.java.Factory;
 import com.ingenico.connect.gateway.sdk.java.domain.definitions.Address;
 import com.ingenico.connect.gateway.sdk.java.domain.definitions.AmountOfMoney;
 import com.ingenico.connect.gateway.sdk.java.domain.hostedcheckout.CreateHostedCheckoutRequest;
@@ -10,9 +9,6 @@ import com.ingenico.connect.gateway.sdk.java.domain.hostedcheckout.definitions.H
 import com.ingenico.connect.gateway.sdk.java.domain.payment.definitions.Customer;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.definitions.Order;
 import preparaConexao.PreparaConexao;
-
-import java.io.File;
-import java.net.URI;
 
 public class CreateHostedCheckout {
     public static void main(String[] args) {

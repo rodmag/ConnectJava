@@ -9,7 +9,7 @@ import com.ingenico.connect.gateway.sdk.java.domain.token.CreateTokenResponse;
 import com.ingenico.connect.gateway.sdk.java.domain.token.definitions.CustomerToken;
 import com.ingenico.connect.gateway.sdk.java.domain.token.definitions.TokenCard;
 import com.ingenico.connect.gateway.sdk.java.domain.token.definitions.TokenCardData;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 public class CreateToken {
 

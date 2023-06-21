@@ -14,7 +14,7 @@ import com.ingenico.connect.gateway.sdk.java.domain.refund.RefundResponse;
 import com.ingenico.connect.gateway.sdk.java.domain.refund.definitions.RefundCustomer;
 import com.ingenico.connect.gateway.sdk.java.domain.refund.definitions.RefundReferences;
 import com.ingenico.connect.gateway.sdk.java.domain.refund.definitions.RefundResult;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 import java.util.List;
 

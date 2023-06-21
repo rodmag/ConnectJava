@@ -1,12 +1,8 @@
-package hostedCheckout;
+package GC.hostedCheckout;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
-import com.ingenico.connect.gateway.sdk.java.Factory;
 import com.ingenico.connect.gateway.sdk.java.domain.hostedcheckout.GetHostedCheckoutResponse;
 import preparaConexao.PreparaConexao;
-
-import java.io.File;
-import java.net.URI;
 
 public class GetHostedCheckout {
     public static void main(String[] args) {

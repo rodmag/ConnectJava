@@ -1,16 +1,10 @@
-package services;
+package GC.services;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
-import com.ingenico.connect.gateway.sdk.java.Factory;
-import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsRequest;
-import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsResponse;
 import com.ingenico.connect.gateway.sdk.java.merchant.services.ConvertAmountParams;
 import preparaConexao.PreparaConexao;
 
-import java.io.File;
-import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Properties;
 
 public class ConvertAmount {
     public static void main(String[] args) throws URISyntaxException {

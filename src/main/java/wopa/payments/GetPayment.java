@@ -3,7 +3,7 @@ package wopa.payments;
 import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.PaymentResponse;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 public class GetPayment {
 

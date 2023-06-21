@@ -1,15 +1,11 @@
-package services;
+package GC.services;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
-import com.ingenico.connect.gateway.sdk.java.Factory;
 import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsRequest;
 import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsResponse;
 import preparaConexao.PreparaConexao;
 
-import java.io.File;
-import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Properties;
 
 public class IINDetails {
     public static void main(String[] args) throws URISyntaxException {

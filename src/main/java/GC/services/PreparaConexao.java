@@ -1,4 +1,4 @@
-package services;
+package GC.services;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.Factory;

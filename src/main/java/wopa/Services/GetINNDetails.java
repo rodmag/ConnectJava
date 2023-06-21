@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsRequest;
 import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsResponse;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 public class GetINNDetails {
 

@@ -1,9 +1,7 @@
-package sessions;
+package GC.sessions;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.Factory;
-import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsRequest;
-import com.ingenico.connect.gateway.sdk.java.domain.services.GetIINDetailsResponse;
 import com.ingenico.connect.gateway.sdk.java.domain.sessions.SessionRequest;
 import com.ingenico.connect.gateway.sdk.java.domain.sessions.SessionResponse;
 

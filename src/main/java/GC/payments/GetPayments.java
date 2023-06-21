@@ -1,13 +1,9 @@
-package payments;
+package GC.payments;
 
 import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
-import com.ingenico.connect.gateway.sdk.java.Factory;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.PaymentResponse;
 import preparaConexao.PreparaConexao;
-
-import java.io.File;
-import java.net.URI;
 
 public class GetPayments {
     public static void main(String[] args) {

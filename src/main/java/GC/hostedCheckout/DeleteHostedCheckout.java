@@ -1,18 +1,15 @@
-package wopa.hostedCheckout;
+package GC.hostedCheckout;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
-import GC.services.PreparaConexao;
+import preparaConexao.PreparaConexao;
 
 public class DeleteHostedCheckout {
-
     public static void main(String[] args) {
 
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        client.merchant("1908466593").hostedcheckouts().delete("06492085-abb7-71ff-a29f-0da3c59732a3");
-
-
+        client.merchant("10179").hostedcheckouts().delete("0645e97d-f3ed-71ff-80d4-69496420393c");
 
     }
 

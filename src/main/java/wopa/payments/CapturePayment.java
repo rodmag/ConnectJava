@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.domain.capture.CaptureResponse;
 import com.ingenico.connect.gateway.sdk.java.domain.payment.CapturePaymentRequest;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 public class CapturePayment {
 

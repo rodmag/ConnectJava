@@ -2,7 +2,7 @@ package wopa.hostedCheckout;
 
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.domain.hostedcheckout.GetHostedCheckoutResponse;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 public class GetHostedCheckout {
 

@@ -1,6 +1,5 @@
 package wopa.token;
 
-import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.domain.definitions.Address;
 import com.ingenico.connect.gateway.sdk.java.domain.definitions.CardWithoutCvv;
@@ -8,7 +7,7 @@ import com.ingenico.connect.gateway.sdk.java.domain.token.UpdateTokenRequest;
 import com.ingenico.connect.gateway.sdk.java.domain.token.definitions.CustomerToken;
 import com.ingenico.connect.gateway.sdk.java.domain.token.definitions.TokenCard;
 import com.ingenico.connect.gateway.sdk.java.domain.token.definitions.TokenCardData;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 public class UpdateToken {
 

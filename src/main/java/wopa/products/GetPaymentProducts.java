@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.ingenico.connect.gateway.sdk.java.Client;
 import com.ingenico.connect.gateway.sdk.java.domain.product.PaymentProducts;
 import com.ingenico.connect.gateway.sdk.java.merchant.products.FindProductsParams;
-import services.PreparaConexao;
+import GC.services.PreparaConexao;
 
 public class GetPaymentProducts {
 
