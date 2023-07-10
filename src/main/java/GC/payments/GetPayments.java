@@ -11,7 +11,7 @@ public class GetPayments {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        PaymentResponse response = client.merchant("10179").payments().get("paymentId");
+        PaymentResponse response = client.merchant("merchantId").payments().get("paymentId");
 
         Gson gson = new Gson();
 
