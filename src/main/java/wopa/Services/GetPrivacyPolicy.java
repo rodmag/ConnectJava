@@ -17,7 +17,7 @@ public class GetPrivacyPolicy {
         query.setLocale("en_US");
         query.setPaymentProductId(1);
 
-        GetPrivacyPolicyResponse response = client.merchant("1908466593").services().privacypolicy(query);
+        GetPrivacyPolicyResponse response = client.merchant("merchantId").services().privacypolicy(query);
 
         Gson gson = new Gson();
 
