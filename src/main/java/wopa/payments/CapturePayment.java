@@ -16,7 +16,7 @@ public class CapturePayment {
         CapturePaymentRequest body = new CapturePaymentRequest();
         body.setAmount(4005L);
 
-        CaptureResponse response = client.merchant("1908466593").payments().capture("10252149613", body);
+        CaptureResponse response = client.merchant("merchantId").payments().capture("10252149613", body);
 
         Gson gson = new Gson();
 
