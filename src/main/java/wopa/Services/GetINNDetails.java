@@ -16,7 +16,7 @@ public class GetINNDetails {
         GetIINDetailsRequest body = new GetIINDetailsRequest();
         body.setBin("4567350000427977");
 
-        GetIINDetailsResponse response = client.merchant("1908466593").services().getIINdetails(body);
+        GetIINDetailsResponse response = client.merchant("merchantId").services().getIINdetails(body);
 
         Gson gson = new Gson();
 
