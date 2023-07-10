@@ -37,7 +37,7 @@ public class UpdateToken {
         body.setCard(card);
         body.setPaymentProductId(1);
 
-        client.merchant("1908466593").tokens().update("9000114769188692", body);
+        client.merchant("merchantId").tokens().update("9000114769188692", body);
 
     }
 
