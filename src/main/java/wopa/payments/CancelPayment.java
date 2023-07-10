@@ -12,7 +12,7 @@ public class CancelPayment {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        CancelPaymentResponse response = client.merchant("1908466593").payments().cancel("10252149460");
+        CancelPaymentResponse response = client.merchant("merchantId").payments().cancel("10252149460");
 
         Gson gson = new Gson();
 
