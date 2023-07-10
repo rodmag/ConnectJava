@@ -17,7 +17,7 @@ public class ConvertAmount {
         query.setTarget("USD");
         query.setAmount(100L);
 
-        com.ingenico.connect.gateway.sdk.java.domain.services.ConvertAmount response = client.merchant("1908466593").services().convertAmount(query);
+        com.ingenico.connect.gateway.sdk.java.domain.services.ConvertAmount response = client.merchant("merchantId").services().convertAmount(query);
 
         Gson gson = new Gson();
 
