@@ -39,7 +39,7 @@ public class CreateToken {
         body.setCard(card);
         body.setPaymentProductId(1);
 
-        CreateTokenResponse response = client.merchant("1908466593").tokens().create(body);
+        CreateTokenResponse response = client.merchant("merchantId").tokens().create(body);
 
         Gson gson = new Gson();
 
