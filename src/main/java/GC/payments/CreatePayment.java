@@ -56,7 +56,7 @@ public class CreatePayment {
         Gson gson = new Gson();
 
         try {
-            CreatePaymentResponse response = client.merchant("10179").payments().create(body);
+            CreatePaymentResponse response = client.merchant("merchantId").payments().create(body);
 
             System.out.println("Resposta: " + gson.toJson(response));
 
