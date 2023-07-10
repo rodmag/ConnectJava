@@ -15,7 +15,7 @@ public class CreateSession {
 
         SessionRequest body = new SessionRequest();
 
-        SessionResponse response = client.merchant("1908466593").sessions().create(body);
+        SessionResponse response = client.merchant("merchantId").sessions().create(body);
 
         Gson gson = new Gson();
 
