@@ -56,7 +56,7 @@ public class CreateRefund {
         Gson gson = new Gson();
 
         try {
-            RefundResponse response = client.merchant("1908466593").payments().refund("10252135573", body);
+            RefundResponse response = client.merchant("merchantId").payments().refund("10252135573", body);
 
             System.out.println("Resposta do Create Refund: " + gson.toJson(response));
 
