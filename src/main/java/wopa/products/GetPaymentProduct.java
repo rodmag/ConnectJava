@@ -22,7 +22,7 @@ public class GetPaymentProduct {
         //query.setForceBasicFlow(false);
         //query.addHide("fields");
 
-        PaymentProductResponse response = client.merchant("1908466593").products().get(1, query);
+        PaymentProductResponse response = client.merchant("merchantId").products().get(1, query);
 
         Gson gson = new Gson();
 
