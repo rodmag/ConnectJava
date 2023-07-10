@@ -11,7 +11,7 @@ public class GetHostedCheckout {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        GetHostedCheckoutResponse response = client.merchant("1908466593").hostedcheckouts().get("06492077-4d0b-71ff-8b41-7cc070aeb241");
+        GetHostedCheckoutResponse response = client.merchant("merchantId").hostedcheckouts().get("06492077-4d0b-71ff-8b41-7cc070aeb241");
 
         System.out.printf("The payment status is: " + response.getStatus());
 
