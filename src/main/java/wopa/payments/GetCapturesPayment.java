@@ -12,7 +12,7 @@ public class GetCapturesPayment {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        CapturesResponse response = client.merchant("1908466593").payments().captures("10252149613");
+        CapturesResponse response = client.merchant("merchantId").payments().captures("10252149613");
 
         Gson gson = new Gson();
 
