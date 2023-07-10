@@ -17,7 +17,7 @@ public class ConvertAmount {
         query.setTarget("BRL");
         query.setAmount(100L);
 
-        com.ingenico.connect.gateway.sdk.java.domain.services.ConvertAmount response = client.merchant("10179").services().convertAmount(query);
+        com.ingenico.connect.gateway.sdk.java.domain.services.ConvertAmount response = client.merchant("merchantId").services().convertAmount(query);
 
         System.out.println("Convert: " + query.getSource() + " To: " + query.getTarget());
         System.out.println("Converted value is: " + response.getConvertedAmount());
