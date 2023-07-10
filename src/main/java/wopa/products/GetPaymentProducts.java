@@ -21,7 +21,7 @@ public class GetPaymentProducts {
         //query.setIsRecurring(true);
         //query.addHide("fields");
 
-        PaymentProducts response = client.merchant("1908466593").products().find(query);
+        PaymentProducts response = client.merchant("merchantId").products().find(query);
 
         Gson gson = new Gson();
 
