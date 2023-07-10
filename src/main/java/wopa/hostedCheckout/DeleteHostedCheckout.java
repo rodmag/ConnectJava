@@ -10,7 +10,7 @@ public class DeleteHostedCheckout {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        client.merchant("1908466593").hostedcheckouts().delete("06492085-abb7-71ff-a29f-0da3c59732a3");
+        client.merchant("merchantId").hostedcheckouts().delete("06492085-abb7-71ff-a29f-0da3c59732a3");
 
 
 
