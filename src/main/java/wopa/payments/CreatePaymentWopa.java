@@ -89,7 +89,7 @@ public class CreatePaymentWopa {
         Gson gson = new Gson();
 
         try {
-            CreatePaymentResponse response = client.merchant("1908466593").payments().create(body);
+            CreatePaymentResponse response = client.merchant("merchantId").payments().create(body);
 
             System.out.println("Resposta do Create Payment: " + gson.toJson(response));
 
