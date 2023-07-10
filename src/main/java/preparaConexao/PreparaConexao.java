@@ -9,7 +9,7 @@ import java.net.URI;
 public class PreparaConexao {
 
     public static Client startConection () {
-        String filePath = "Path for the file Caminho";
+        String filePath = "resources/Caminho.txt";
         File file = new File(filePath);
         URI propertiesUrl= file.toURI();
         Client client = Factory.createClient(propertiesUrl, "apiKeyId", "secretApiKey");
