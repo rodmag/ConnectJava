@@ -12,7 +12,7 @@ public class GetRefund {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        RefundResponse response = client.merchant("1908466593").refunds().get("10252135573");
+        RefundResponse response = client.merchant("merchantId").refunds().get("10252135573");
 
         Gson gson = new Gson();
 
