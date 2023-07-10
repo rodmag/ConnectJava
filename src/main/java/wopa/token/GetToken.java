@@ -12,7 +12,7 @@ public class GetToken {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        TokenResponse response = client.merchant("1908466593").tokens().get("9000114769188692");
+        TokenResponse response = client.merchant("merchantId").tokens().get("9000114769188692");
 
         Gson gson = new Gson();
 
