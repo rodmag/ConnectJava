@@ -16,7 +16,7 @@ public class IINDetails {
         GetIINDetailsRequest body = new GetIINDetailsRequest();
         body.setBin("4485592758359790");
 
-        GetIINDetailsResponse response = client.merchant("10179").services().getIINdetails(body);
+        GetIINDetailsResponse response = client.merchant("merchantId").services().getIINdetails(body);
 
         System.out.println("The card country is: " + response.getCountryCode());
         System.out.println("The card paymentID is: " + response.getPaymentProductId());
