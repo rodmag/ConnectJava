@@ -40,7 +40,7 @@ public class CreateHostedCheckout {
         body.setHostedCheckoutSpecificInput(hostedCheckoutSpecificInput);
         body.setOrder(order);
 
-        CreateHostedCheckoutResponse response = client.merchant("1908466593").hostedcheckouts().create(body);
+        CreateHostedCheckoutResponse response = client.merchant("merchantId").hostedcheckouts().create(body);
 
         System.out.println("RETURNMAC: " + response.getRETURNMAC());
         System.out.println("hostedCheckoutId: " + response.getHostedCheckoutId());
