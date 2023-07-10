@@ -12,7 +12,7 @@ public class GetPayment {
         //Utiliza API e Secret key configurada no arquivo PreparaConexao.
         Client client = PreparaConexao.startConection();
 
-        PaymentResponse response = client.merchant("1908466593").payments().get("10252135573");
+        PaymentResponse response = client.merchant("merchantId").payments().get("10252135573");
 
         Gson gson = new Gson();
 
